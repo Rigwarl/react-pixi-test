@@ -10,6 +10,7 @@ function App() {
       <Stage>
         <Camera>
           <Sprite image={bunnyPng} />
+          <Sprite image={bunnyPng} x={200} />
         </Camera>
       </Stage>
     </div>
