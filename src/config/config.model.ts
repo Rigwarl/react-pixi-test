@@ -4,17 +4,17 @@ export interface AbstractItem {
   type: 'simple' | 'complex';
   id: string;
   x?: number;
-	y?: number;
+  y?: number;
 }
 
 export interface SimpleItem extends AbstractItem {
-	type: 'simple';
-	image: string;
+  type: 'simple';
+  image: string;
 }
 
 export interface ComplexItem extends AbstractItem {
-	type: 'complex';
-	parts: Item[];
+  type: 'complex';
+  parts: Item[];
 }
 
 export type Item = SimpleItem | ComplexItem;
